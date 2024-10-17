@@ -2,5 +2,5 @@
 
 SELECT origin, SUM(fans) as num_fans
 FROM metal_bands
-GROUP BY num_fans
+GROUP BY origin
 ORDER BY num_fans
