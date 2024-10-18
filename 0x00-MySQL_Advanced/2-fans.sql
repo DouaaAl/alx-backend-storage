@@ -1,5 +1,3 @@
--- Randing and ordering the metal bands table
-SELECT origin, SUM(fans) as num_fans
-FROM metal_bands.sql
-GROUP BY origin
-ORDER BY num_fans DESC;
+-- Ranking and ordering metal_bands table
+SELECT origin, SUM(fans) as nb_fans FROM metal_bands
+GROUP BY origin ORDER BY nb_fans DESC;
